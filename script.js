@@ -51,6 +51,15 @@ const checkWinner=()=>{
             }
         }
     }
+    let filledBoxes=0;
+    for(let box of boxes){
+        if(box.innerText!==""){
+            filledBoxes++;
+        }
+    }
+    if(filledBoxes===9){
+        showDraw();
+    }
 };
 
 showWinner=(winner)=>{
@@ -71,6 +80,12 @@ for(let box of boxes){
         box.innerText="";
     }
 };
+
+const showDraw=()=>{
+    message.innerText="It's a Draw. Play Again!!";
+    container.classList.remove("hide");
+    disableBox();
+}
 
 newButton.addEventListener("click",GameStartAgain);
 resetButton.addEventListener("click",GameStartAgain);

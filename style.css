@@ -40,6 +40,7 @@ body{
     font-size: 1rem;
     background-color: black;
     color: whitesmoke;
+    cursor: pointer;
 }
 .NewButton{
       padding: 1rem;
@@ -48,18 +49,28 @@ body{
     font-size: 1rem;
     background-color: black;
     color: whitesmoke;
+    cursor: pointer;
+    
 }
 
 #msg{
     font-size: 3rem;
 }
 .msg-container{
-    height: 30vmin;
+    height: 100vmin;
+    margin: 400px auto;
 }
 .hide{
     display: none;
 }
 
-
+.title-box{
+    background-color: black;
+    color: aliceblue;
+    padding: 15px 20px;
+    margin: 30px auto;
+    width: fit-content;
+    border-radius: 1rem;
+}
 
 
